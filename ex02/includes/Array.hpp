@@ -6,13 +6,14 @@
 /*   By: omizin <omizin@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 17:29:28 by omizin            #+#    #+#             */
-/*   Updated: 2025/12/16 13:59:02 by omizin           ###   ########.fr       */
+/*   Updated: 2026/01/05 13:37:14 by omizin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include <iostream>
+#include <stdexcept>
 
 #define RESET   "\033[0m"
 #define RED     "\033[31m"

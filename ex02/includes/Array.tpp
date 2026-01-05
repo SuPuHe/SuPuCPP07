@@ -6,9 +6,11 @@
 /*   By: omizin <omizin@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 12:54:40 by omizin            #+#    #+#             */
-/*   Updated: 2025/12/16 13:02:11 by omizin           ###   ########.fr       */
+/*   Updated: 2026/01/05 13:38:22 by omizin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Array.hpp"
 
 template <typename T>
 Array<T>::Array() : _data(NULL), _size(0) {}
@@ -47,7 +49,7 @@ template <typename T>
 T& Array<T>::operator[](unsigned int index)
 {
 	if (index >= _size)
-		throw std::exception();
+		throw std::out_of_range("Index out of bounds");
 	return _data[index];
 }
 
@@ -55,7 +57,7 @@ template <typename T>
 T const& Array<T>::operator[](unsigned int index) const
 {
 	if (index >= _size)
-		throw std::exception();
+		throw std::out_of_range("Index out of bounds");
 	return _data[index];
 }
 
